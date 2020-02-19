@@ -1,0 +1,105 @@
+@import "_variables";
+
+body {
+    padding: 0;
+    margin: 0;
+    background: #3E94D1;
+    font-family: 'Source Sans Pro', sans-serif;
+}
+
+.titleWrap {
+    width: 514px;
+    margin: auto;
+    background: #3E94D1;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 2fr;
+    gap: 10px;
+    padding: 10px;
+
+    .srossScore,
+    .toeScore {
+        background-color: #24577B;
+        color: black;
+        font-size: 22px;
+        letter-spacing: 3px;
+        height: 40px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        border-radius: 2px;
+    }
+
+    .moveIs {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        grid-column-start: 1;
+        grid-column-end: 3;
+
+        #moveIs {
+            transform: scale(2);
+            margin-left: 10px;
+        }
+    }
+}
+
+.mainWrap {
+    width: 514px;
+    height: 514px;
+    margin: auto;
+    background: #24577B;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 8px;
+
+    div {
+        background: #3E94D1;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        cursor: pointer;
+
+        span {
+            color: #24577B;
+            transform: scale(6);
+            white-space: pre-wrap;
+
+            &::selection {
+                background: transparent;
+            }
+        }
+    }
+}
+
+.footerWrap {
+    padding: 10px;
+    box-sizing: border-box;
+    width: 514px;
+    display: grid;
+    background: #3E94D1;
+    grid-template-columns: 1fr 1fr;
+    margin: auto;
+    margin-top: 6px;
+    gap: 10px;
+
+    #players, #clear {
+        transition: .4s;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        &::selection {
+            background: transparent;
+        }
+        cursor: pointer;
+        background: #24577B;
+        border-radius: 2px;
+        font-size: 18px;
+        padding: 2px;
+        &:hover {
+            background:#03406A;
+            transition: .4s;
+            color: #DBDBDB;
+        }
+    }
+}

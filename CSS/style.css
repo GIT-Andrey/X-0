@@ -1,0 +1,151 @@
+body {
+  padding: 0;
+  margin: 0;
+  background: #3E94D1;
+  font-family: 'Source Sans Pro', sans-serif;
+}
+
+.titleWrap {
+  width: 514px;
+  margin: auto;
+  background: #3E94D1;
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 1fr 1fr;
+      grid-template-columns: 1fr 1fr;
+  -ms-grid-rows: 1fr 2fr;
+      grid-template-rows: 1fr 2fr;
+  gap: 10px;
+  padding: 10px;
+}
+
+.titleWrap .srossScore,
+.titleWrap .toeScore {
+  background-color: #24577B;
+  color: black;
+  font-size: 22px;
+  letter-spacing: 3px;
+  height: 40px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  border-radius: 2px;
+}
+
+.titleWrap .moveIs {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -ms-grid-column: 1;
+      grid-column-start: 1;
+  grid-column-end: 3;
+}
+
+.titleWrap .moveIs #moveIs {
+  -webkit-transform: scale(2);
+          transform: scale(2);
+  margin-left: 10px;
+}
+
+.mainWrap {
+  width: 514px;
+  height: 514px;
+  margin: auto;
+  background: #24577B;
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 1fr 1fr 1fr;
+      grid-template-columns: 1fr 1fr 1fr;
+  gap: 8px;
+}
+
+.mainWrap div {
+  background: #3E94D1;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  cursor: pointer;
+}
+
+.mainWrap div span {
+  color: #24577B;
+  -webkit-transform: scale(6);
+          transform: scale(6);
+  white-space: pre-wrap;
+}
+
+.mainWrap div span::-moz-selection {
+  background: transparent;
+}
+
+.mainWrap div span::selection {
+  background: transparent;
+}
+
+.footerWrap {
+  padding: 10px;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  width: 514px;
+  display: -ms-grid;
+  display: grid;
+  background: #3E94D1;
+  -ms-grid-columns: 1fr 1fr;
+      grid-template-columns: 1fr 1fr;
+  margin: auto;
+  margin-top: 6px;
+  gap: 10px;
+}
+
+.footerWrap #players, .footerWrap #clear {
+  -webkit-transition: .4s;
+  transition: .4s;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  cursor: pointer;
+  background: #24577B;
+  border-radius: 2px;
+  font-size: 18px;
+  padding: 2px;
+}
+
+.footerWrap #players::-moz-selection, .footerWrap #clear::-moz-selection {
+  background: transparent;
+}
+
+.footerWrap #players::selection, .footerWrap #clear::selection {
+  background: transparent;
+}
+
+.footerWrap #players:hover, .footerWrap #clear:hover {
+  background: #03406A;
+  -webkit-transition: .4s;
+  transition: .4s;
+  color: #DBDBDB;
+}
+/*# sourceMappingURL=style.css.map */
