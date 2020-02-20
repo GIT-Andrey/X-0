@@ -145,9 +145,9 @@ body {
 
 .mainWrap div span {
   color: #24577B;
-  -webkit-transform: scale(6);
-          transform: scale(6);
   white-space: pre-wrap;
+  -webkit-transform: scale(4);
+          transform: scale(4);
 }
 
 .mainWrap div span::-moz-selection {
@@ -160,15 +160,15 @@ body {
 
 @media all and (min-width: 480px) and (max-width: 767px) {
   .mainWrap div span {
-    -webkit-transform: scale(4);
-            transform: scale(4);
+    -webkit-transform: scale(3);
+            transform: scale(3);
   }
 }
 
 @media all and (max-width: 479px) {
   .mainWrap div span {
-    -webkit-transform: scale(4);
-            transform: scale(4);
+    -webkit-transform: scale(3);
+            transform: scale(3);
   }
 }
 

@@ -102,19 +102,19 @@ body {
 
         span {
             color: #24577B;
-            transform: scale(6);
             white-space: pre-wrap;
+            transform: scale(4);
 
             &::selection {
                 background: transparent;
             }
 
             @include media(wide-phones) {
-                transform: scale(4);
+                transform: scale(3);
             }
 
             @include media(phones) {
-                transform: scale(4);
+                transform: scale(3);
             }
         }
     }

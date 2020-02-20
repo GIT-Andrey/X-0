@@ -33,17 +33,17 @@ function createArea() {
 function isDivClick(botMove) {
     let targetNumber = event.target.id.split('-');
     if (botMove >= 0 && botMove < 9) {
-        $("#span-" + botMove).html('&#128939;');
+        $("#span-" + botMove).html('❌');
         areaArr[botMove] = move;
         move = false;
-        $("#moveIs").html("&#128901;");
+        $("#moveIs").html("⭕");
         areaStatus();
     } else {
         if (areaArr[targetNumber[1]] == undefined) {
-            move == true ? $("#span-" + targetNumber[1]).html('&#128939;') : $("#span-" + targetNumber[1]).html('&#128901;');
+            move == true ? $("#span-" + targetNumber[1]).html('❌') : $("#span-" + targetNumber[1]).html('⭕');
             areaArr[targetNumber[1]] = move;
             move = !move;
-            move == true ? $("#moveIs").html("&#128939;") : $("#moveIs").html("&#128901;");
+            move == true ? $("#moveIs").html("❌") : $("#moveIs").html("⭕");
             areaStatus();
         }
     }
@@ -94,7 +94,7 @@ function areaStatus() {
 function areaUpdate(winner, mode) {
     for (let i = 0; i < 9; i++) {
         areaArr[i] = undefined;
-        move == true ? $("#moveIs").html("&#128939;") : $("#moveIs").html("&#128901;");
+        move == true ? $("#moveIs").html("❌") : $("#moveIs").html("⭕");
         $("#span-" + i).html(' ');
     }
     if (winner == true) {
@@ -143,12 +143,12 @@ function scoreClear() {
 function botSwich() {
     if ($("#players").text() == "2 игрока") {
         $("#players").html("1 игрок");
-        $("#moveIs").html("&#128939;")
+        $("#moveIs").html("❌")
         move = true;
         botFunc();
     } else {
         $("#players").html("2 игрока");
-        $("#moveIs").html("&#128939;")
+        $("#moveIs").html("❌")
         move = true;
     }
     areaUpdate();
@@ -158,9 +158,9 @@ function botSwich() {
 function scoreShow() {
     for (let i = 0; i < 9; i++) {
         if (areaArr[i] == true) {
-            $("#divScore-" + i).html("&#128939;");
+            $("#divScore-" + i).html("❌");
         } else if(areaArr[i] == false) {
-            $("#divScore-" + i).html("&#128901;");
+            $("#divScore-" + i).html("⭕");
         } else {
             $("#divScore-" + i).html(" ");
         }
