@@ -1,24 +1,49 @@
 <!DOCTYPE html>
 <html>
+
 <head>
     <meta charset="UTF-8">
     <title>Document</title>
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="stylesheet" href="../CSS/style.css">
-    <link href="https://fonts.googleapis.com/css?family=PT+Sans|Roboto+Condensed|Rubik|Source+Sans+Pro&display=swap" rel="stylesheet">
-    <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
+    <link href="https://fonts.googleapis.com/css?family=PT+Sans|Roboto+Condensed|Rubik|Source+Sans+Pro&display=swap"
+        rel="stylesheet">
+    <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js"
+        integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous">
+    </script>
 </head>
 
 <body>
-    <div class="titleWrap">
-        <div class="srossScore">&#128939; - <span id="crossScore"></span></div>
-        <div class="toeScore">&#128901; - <span id="toeScore"></span></div>
-        <div class="moveIs">Ходит: <span id="moveIs">&#128939;</span></div>
+    <div id="scoreInfoDiv" class="scoreInfoDiv">
+        Игра окончена! <br>
+        <span class="WhoIsWinner">rtr</span> <br>
+        <span class="area2name">Поле после раунда:</span>
+        <div class="area2wrap">
+            <div>k</div>
+            <div>k</div>
+            <div>k</div>
+            <div>k</div>
+            <div>k</div>
+            <div>k</div>
+            <div>k</div>
+            <div>k</div>
+            <div>k</div>
+        </div>
+        <div class="ScoreDivButton">Играть ещё раз!</div>
     </div>
-    <div class="mainWrap"></div>
-    <div class="footerWrap">
-        <div id="players">2 игрока</div>
-        <div id="clear">Онулировать очки</div>
+    <div id="allWrap" class="allWrap">
+        <div class="titleWrap">
+            <div class="srossScore">&#128939; - <span id="crossScore"></span></div>
+            <div class="toeScore">&#128901; - <span id="toeScore"></span></div>
+            <div class="moveIs">Ходит: <span id="moveIs">&#128939;</span></div>
+        </div>
+        <div class="mainWrap"></div>
+        <div class="footerWrap">
+            <div id="players">2 игрока</div>
+            <div id="clear">Онулировать очки</div>
+        </div>
     </div>
     <script src="../Scripts/script.js"></script>
-</body></html>
+</body>
+
+</html>

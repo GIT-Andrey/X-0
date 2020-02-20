@@ -72,9 +72,11 @@ function areaStatus() {
     } else if (endGame == true) {
         alert("Ничья!");
         areaUpdate();
+        if ($("#players").text() == "1 игрок") {
+            botFunc();
+        }
     }
-    if ($("#players").text() == "1 игрок" && !move == false && endGame == false) {
-        move = true;
+    if ($("#players").text() == "1 игрок" && !move == false) {
         botFunc();
     }
 }
@@ -92,9 +94,6 @@ function areaUpdate(winner, mode) {
     if (winner == false) {
         let score = $("#toeScore").text();
         $("#toeScore").html(++score);
-    }
-    if ($("#players").text() == "1 игрок") {
-        move = true;
     }
 }
 
@@ -132,8 +131,6 @@ function scoreClear() {
 }
 
 function botSwich() {
-    areaUpdate();
-    scoreClear();
     if ($("#players").text() == "2 игрока") {
         $("#players").html("1 игрок");
         $("#moveIs").html("&#128939;")
@@ -144,4 +141,10 @@ function botSwich() {
         $("#moveIs").html("&#128939;")
         move = true;
     }
+    areaUpdate();
+    scoreClear();
+}
+
+function scoreShow() {
+    
 }

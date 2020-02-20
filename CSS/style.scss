@@ -103,3 +103,73 @@ body {
         }
     }
 }
+
+.allWrap {
+    filter: blur(8px);
+}
+
+.scoreInfoDiv {
+    position: absolute;
+    margin-top: 4%;
+    margin-left: 50%;
+    transform: translateX(-50%);
+    width: 400px;
+    height: 600px;
+    background: #24577B;
+    z-index: 100;
+    text-align: center;
+    padding: 2%;
+    box-sizing: border-box;
+    font-size: 1.5em;
+    line-height: 50px;
+    border: black solid 1px;
+    border-radius: 2px;
+    box-shadow: 0px 0px 14px rgba($color: black, $alpha: .3);
+
+}
+
+.area2name {
+    display: block;
+    width: 100%;
+    text-align: left;
+    font-size: 0.8em;
+    margin-bottom: 20px;
+}
+
+.area2wrap {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 3px;
+    background: whitesmoke;
+    width: 306px;
+    height: 306px;
+    margin: auto;
+
+    div {
+        background: #24577B;
+        height: 100px;
+        width: 100px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+}
+
+.ScoreDivButton {
+    font-size: 1.0em;
+    background: black;
+    margin: auto;
+    width: 80%;
+    text-align: center;
+    color: white;
+    margin-top: 20px;
+    border-radius: 2px;
+    cursor: pointer;
+    transition: .3s;
+
+    &:hover {
+        transition: .3s;
+        transform: scale(1.1);
+    }
+}
