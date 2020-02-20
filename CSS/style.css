@@ -19,6 +19,20 @@ body {
   padding: 10px;
 }
 
+@media all and (min-width: 480px) and (max-width: 767px) {
+  .titleWrap {
+    width: 311px;
+    gap: 5px;
+  }
+}
+
+@media all and (max-width: 479px) {
+  .titleWrap {
+    width: 311px;
+    gap: 5px;
+  }
+}
+
 .titleWrap .srossScore,
 .titleWrap .toeScore {
   background-color: #24577B;
@@ -36,6 +50,22 @@ body {
       -ms-flex-align: center;
           align-items: center;
   border-radius: 2px;
+}
+
+@media all and (min-width: 480px) and (max-width: 767px) {
+  .titleWrap .srossScore,
+  .titleWrap .toeScore {
+    font-size: 14px;
+    height: 30px;
+  }
+}
+
+@media all and (max-width: 479px) {
+  .titleWrap .srossScore,
+  .titleWrap .toeScore {
+    font-size: 14px;
+    height: 30px;
+  }
 }
 
 .titleWrap .moveIs {
@@ -59,6 +89,18 @@ body {
   margin-left: 10px;
 }
 
+@media all and (min-width: 480px) and (max-width: 767px) {
+  .titleWrap .moveIs {
+    font-size: 14px;
+  }
+}
+
+@media all and (max-width: 479px) {
+  .titleWrap .moveIs {
+    font-size: 14px;
+  }
+}
+
 .mainWrap {
   width: 514px;
   height: 514px;
@@ -69,6 +111,22 @@ body {
   -ms-grid-columns: 1fr 1fr 1fr;
       grid-template-columns: 1fr 1fr 1fr;
   gap: 8px;
+}
+
+@media all and (min-width: 480px) and (max-width: 767px) {
+  .mainWrap {
+    width: 314px;
+    height: 314px;
+    gap: 4px;
+  }
+}
+
+@media all and (max-width: 479px) {
+  .mainWrap {
+    width: 314px;
+    height: 314px;
+    gap: 4px;
+  }
 }
 
 .mainWrap div {
@@ -100,6 +158,20 @@ body {
   background: transparent;
 }
 
+@media all and (min-width: 480px) and (max-width: 767px) {
+  .mainWrap div span {
+    -webkit-transform: scale(4);
+            transform: scale(4);
+  }
+}
+
+@media all and (max-width: 479px) {
+  .mainWrap div span {
+    -webkit-transform: scale(4);
+            transform: scale(4);
+  }
+}
+
 .footerWrap {
   padding: 10px;
   -webkit-box-sizing: border-box;
@@ -115,7 +187,22 @@ body {
   gap: 10px;
 }
 
-.footerWrap #players, .footerWrap #clear {
+@media all and (min-width: 480px) and (max-width: 767px) {
+  .footerWrap {
+    gap: 5px;
+    width: 311px;
+  }
+}
+
+@media all and (max-width: 479px) {
+  .footerWrap {
+    gap: 5px;
+    width: 311px;
+  }
+}
+
+.footerWrap #players,
+.footerWrap #clear {
   -webkit-transition: .4s;
   transition: .4s;
   display: -webkit-box;
@@ -134,24 +221,45 @@ body {
   padding: 2px;
 }
 
-.footerWrap #players::-moz-selection, .footerWrap #clear::-moz-selection {
+.footerWrap #players::-moz-selection,
+.footerWrap #clear::-moz-selection {
   background: transparent;
 }
 
-.footerWrap #players::selection, .footerWrap #clear::selection {
+.footerWrap #players::selection,
+.footerWrap #clear::selection {
   background: transparent;
 }
 
-.footerWrap #players:hover, .footerWrap #clear:hover {
+.footerWrap #players:hover,
+.footerWrap #clear:hover {
   background: #03406A;
   -webkit-transition: .4s;
   transition: .4s;
   color: #DBDBDB;
 }
 
+@media all and (min-width: 480px) and (max-width: 767px) {
+  .footerWrap #players,
+  .footerWrap #clear {
+    font-size: 12px;
+  }
+}
+
+@media all and (max-width: 479px) {
+  .footerWrap #players,
+  .footerWrap #clear {
+    font-size: 12px;
+  }
+}
+
 .allWrap {
   -webkit-filter: blur(8px);
           filter: blur(8px);
+}
+
+.displayNone {
+  display: none;
 }
 
 .scoreInfoDiv {
@@ -176,6 +284,24 @@ body {
           box-shadow: 0px 0px 14px rgba(0, 0, 0, 0.3);
 }
 
+@media all and (min-width: 480px) and (max-width: 767px) {
+  .scoreInfoDiv {
+    width: 300px;
+    font-size: 20px;
+    line-height: 40px;
+    height: 500px;
+  }
+}
+
+@media all and (max-width: 479px) {
+  .scoreInfoDiv {
+    width: 300px;
+    font-size: 20px;
+    line-height: 40px;
+    height: 500px;
+  }
+}
+
 .area2name {
   display: block;
   width: 100%;
@@ -196,6 +322,24 @@ body {
   margin: auto;
 }
 
+@media all and (min-width: 480px) and (max-width: 767px) {
+  .area2wrap {
+    width: 234px;
+    height: 234px;
+    gap: 2px;
+    border: 2px solid whitesmoke;
+  }
+}
+
+@media all and (max-width: 479px) {
+  .area2wrap {
+    width: 234px;
+    height: 234px;
+    gap: 2px;
+    border: 2px solid whitesmoke;
+  }
+}
+
 .area2wrap div {
   background: #24577B;
   height: 100px;
@@ -209,6 +353,20 @@ body {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+}
+
+@media all and (min-width: 480px) and (max-width: 767px) {
+  .area2wrap div {
+    width: 76px;
+    height: 76px;
+  }
+}
+
+@media all and (max-width: 479px) {
+  .area2wrap div {
+    width: 76px;
+    height: 76px;
+  }
 }
 
 .ScoreDivButton {

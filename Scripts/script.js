@@ -9,17 +9,24 @@ function createArea() {
             id: "div-" + i
         }).appendTo(".mainWrap");
         $("#div-" + i).click(isDivClick);
-    };
+    }
     for (let i = 0; i < 9; i++) {
         $("<span></span>", {
             id: "span-" + i
         }).appendTo("#div-" + i);
         $("#span-" + i).html(' ');
-    };
+    }
+    for (let i = 0; i < 9; i++) {
+        $("<div></div>", {
+            id: "divScore-" + i
+        }).appendTo(".area2wrap");
+    }
     $("#crossScore").html('0');
     $("#toeScore").html('0');
     $("#players").click(botSwich);
     $("#clear").click(scoreClear);
+    $("#scoreInfoDiv").addClass("displayNone");
+    $(".ScoreDivButton").click(scoreOff);
     areaUpdate();
 }
 
@@ -60,17 +67,20 @@ function areaStatus() {
         areaArr[2] == !move && areaArr[4] == !move && areaArr[6] == !move
     ) {
         if (!move == true) {
-            alert("Выиграли крестики!");
+            $(".WhoIsWinner").html("Выиграли крестики!");
+            scoreShow();
             areaUpdate(!move);
         } else {
-            alert("Выиграли нолики!");
+            $(".WhoIsWinner").html("Выиграли нолики!");
+            scoreShow();
             areaUpdate(!move);
         }
         if ($("#players").text() == "1 игрок") {
             move = true;
         }
     } else if (endGame == true) {
-        alert("Ничья!");
+        $(".WhoIsWinner").html("Ничья!");
+        scoreShow();
         areaUpdate();
         if ($("#players").text() == "1 игрок") {
             botFunc();
@@ -146,5 +156,20 @@ function botSwich() {
 }
 
 function scoreShow() {
-    
+    for (let i = 0; i < 9; i++) {
+        if (areaArr[i] == true) {
+            $("#divScore-" + i).html("&#128939;");
+        } else if(areaArr[i] == false) {
+            $("#divScore-" + i).html("&#128901;");
+        } else {
+            $("#divScore-" + i).html(" ");
+        }
+    }
+    $("#scoreInfoDiv").removeClass("displayNone");
+    $("#allWrap").addClass("allWrap");
+}
+
+function scoreOff() {
+    $("#scoreInfoDiv").addClass("displayNone");
+    $("#allWrap").removeClass("allWrap");
 }
